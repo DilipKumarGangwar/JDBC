@@ -13,6 +13,9 @@ java Application <----------- > Connectivity via Driver <------------------> Dat
 
 # preparedStatement() makes Insertion  syntax easy
 
-#DAO-
+# DAO- Data Access object
+
+DAO can do CRUD operations, it can Create, Retreive, Updata, Delete from our table
+Here we have separted all database operation in DAO class
 
 
