@@ -13,7 +13,8 @@ import java.util.Scanner;
 class student{
 	
 	 int rollno;
-	 String firstName,lastName;
+	 String firstName;
+	 String lastName;
      int age;
      
     public student()
