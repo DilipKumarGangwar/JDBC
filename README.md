@@ -3,7 +3,7 @@
 java Application <----------- > Connectivity via Driver <------------------> Database
 
 # Steps in connecting Java Aplication to Database (Here MySQL)
- *import package 
+ * import package 
  * load and register the driver      -mysql.connector jar file needed
  * Establish the connection         
  * Create the statement
