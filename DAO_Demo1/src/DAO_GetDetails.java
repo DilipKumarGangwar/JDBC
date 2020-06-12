@@ -71,6 +71,10 @@ class DAO1{
         Class.forName("com.mysql.cj.jdbc.Driver");  // For  old version , you can use - Class.forName("com.mysql.cj.jdbc.Driver") 
 	    con = (Connection) DriverManager.getConnection(url, username, password);
 	}
+	
+	void closeConnection() throws SQLException {
+	     con.close();	
+	}
 	student getDetails(int rollno) throws Exception {
 		
 		     String query = "select * from student where rollno=" + rollno;
@@ -85,7 +89,9 @@ class DAO1{
 		     s.setLastName(rs.getString(3));
 		     s.setAge(rs.getInt(4));
 		    
+		     st.close();   //close connection
 		     //return these details to client
+		     
 		     return s;
 	}
 	
@@ -103,6 +109,7 @@ class DAO1{
 		
 		int rowsAffected = st.executeUpdate();
 		
+		st.close();   //close connection
 		return rowsAffected;
 		
 		
@@ -120,6 +127,7 @@ class DAO1{
 		   
 		}
 		
+		st.close();   //close connection
 		return stu;
 	}
 	
@@ -183,7 +191,7 @@ public class DAO_GetDetails {
 		
 		
 		sc.close();    //close the scanner
-		  
+		d1.closeConnection();   //Close Database connection  
 	
 		
 
