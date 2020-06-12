@@ -53,11 +53,7 @@ class student{
 		this.age = age;
 	}
      
-//	void printDetails() {
-//		
-//		System.out.println("Student Details are");
-//		System.out.println("RollNo="+ getRollno() + " First Name= "+getFirstName()+" "+ "LastName="+getLastName()+" "+ "Age="+getAge() );
-//	}
+
 	@Override
 	public String toString() {
 		return "student [rollno=" + rollno + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age
