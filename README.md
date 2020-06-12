@@ -1,4 +1,4 @@
-#JDBC is an API for accessing relational databases using Java.
+# JDBC is an API for accessing relational databases using Java.
 
 java Application <----------- > Connectivity via Driver <------------------> Database
 
@@ -11,7 +11,7 @@ java Application <----------- > Connectivity via Driver <------------------> Dat
  * Process the result
  * Close the connection
 
-#preparedStatement() makes Insertion  syntax easy
+# preparedStatement() makes Insertion  syntax easy
 
 #DAO-
 
